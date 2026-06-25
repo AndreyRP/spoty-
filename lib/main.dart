@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:spoty/pages/Musica.dart';
+import 'package:spoty/pages/Playlist.dart';
 import 'package:spoty/pages/artistas.dart';
 import 'package:spoty/pages/busca.dart';
 import 'package:spoty/pages/home.dart';
@@ -22,13 +24,15 @@ class MyApp extends StatelessWidget {
         colorScheme: .fromSeed(seedColor: Colors.green),
       ),
 
-      initialRoute: '/busca',
+      initialRoute: '/playlist',
 
       routes: {
         '/home':(context) => Home(),
         '/artistas':(context) => Artistas(),
         '/podcasts':(context) => Podcasts(),
         '/busca': (context) => Busca(),
+        '/playlist': (context) => Playlist(),
+        '/musica': (context) => Musica(),
       }
     );
   }
